@@ -17,6 +17,7 @@
     --grayish-blue: hsl(201, 11%, 66%);
 }
 
+html,
 body{
     font-family: 'Bai Jamjuree';
     height: 100%;
@@ -239,8 +240,8 @@ footer .footer-logo{
     .footer-links-container{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        height: 70px;
-        width: 500px;
+        min-height: 70px;
+        min-width: 500px;
         margin-left: 7em;
     }
     .footer-links-container a{
