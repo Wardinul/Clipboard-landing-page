@@ -29,6 +29,8 @@ img{
     max-width: 100%;
 }
 
+/* All Sections Styles */
+
 section{
     text-align: center;
     padding: 3em 1.8em;
@@ -51,6 +53,12 @@ section p{
     color: var(--grayish-blue);
     margin: 1em 0;
     line-height: 1.8;
+}
+
+/* Download Section + Links Styles */
+
+.page__download{
+    margin-bottom: 5em;
 }
 
 .download{
@@ -89,6 +97,8 @@ section p{
     background-color: hsl(233, 100%, 73%);
 }
 
+/* About Section */
+
 .page__about{
     background-image: url(images/bg-header-mobile.png);
     background-size: cover;
@@ -108,6 +118,8 @@ section p{
     margin: 2em 0;
 }
 
+/* Benefits Section */
+
 .page__benefits h1{
     font-size: 25px;
 }
@@ -121,11 +133,15 @@ section p{
     padding: 1.5em 0;
 }
 
+/* Accessibility Section */
+
 .page__accessibility img{
     margin-top: 3em;
 }
 
-.workflow-sec .item{
+/* Workflown Section */
+
+.page__workflow .item{
     max-width: 310px;
     margin-top: 3em;
 }
@@ -139,18 +155,18 @@ section p{
     color: var(--dark-grayish-blue);
 }
 
-.logos-sec{
+/* Companies Section */
+
+.page__companies{
     display: flex;
     flex-direction: column;
-}
-
-.page__download{
-    margin-bottom: 5em;
 }
 
 .page__companies .company-logo{
     margin-bottom: 4em;
 }
+
+/* Footer Section */
 
 .page__footer{
     background-color: hsla(202, 11%, 66%, 0.193);
@@ -192,6 +208,8 @@ section p{
 .footer-social a:hover{
     color: var(--strong-cyan);
 }
+
+/* Media Queries */
 
 @media screen and (min-width:800px) {
     .about-sec{
@@ -262,14 +280,14 @@ section p{
 }
 
 @media screen and (min-width:1350px) {
-    .logos-sec{
+    .page__companies{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         max-width: 85%;
         margin: 0 auto;
     }
-    .logos-sec .company-logo{
+    .page__companies .company-logo{
         max-width: 100%;
         height: 100%;
         margin: 0;
