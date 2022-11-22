@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 
+/* Starting Styles */
+
 *, *::before, *::after{
     box-sizing: border-box;
     margin:0;
@@ -87,39 +89,39 @@ section p{
     background-color: hsl(233, 100%, 73%);
 }
 
-.about-sec{
+.page__about{
     background-image: url(images/bg-header-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
-.about-sec .bg{
+.page__about .bg{
     position: absolute;
     height: 100%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,0) 61%, rgba(255,255,255,1) 78%); 
 }
 
-.about-sec .page-logo{
+.page__about .page-logo{
     width: 100px;
     margin: 2em 0;
 }
 
-.benefits-sec h1{
+.page__benefits h1{
     font-size: 25px;
 }
 
-.benefits-sec img{
+.page__benefits img{
     margin-bottom: 2em;
 }
 
-.benefits-sec .item{
+.page__benefits .item{
     max-width: 330px;
     padding: 1.5em 0;
 }
 
-.accessibility-sec img{
+.page__accessibility img{
     margin-top: 3em;
 }
 
@@ -128,12 +130,12 @@ section p{
     margin-top: 3em;
 }
 
-.workflow-sec .item img{
+.page__workflow .item img{
     padding: 2em 0;
     height: 100px;
 }
 
-.workflow-sec .item h2{
+.page__workflow .item h2{
     color: var(--dark-grayish-blue);
 }
 
@@ -142,20 +144,20 @@ section p{
     flex-direction: column;
 }
 
-.download-sec{
+.page__download{
     margin-bottom: 5em;
 }
 
-.logos-sec .company-logo{
+.page__companies .company-logo{
     margin-bottom: 4em;
 }
 
-footer{
+.page__footer{
     background-color: hsla(202, 11%, 66%, 0.193);
     text-align: center;
 }
 
-footer .footer-logo{
+.page__footer .footer-logo{
     width: 50px;
     padding: 2.5em 0;
 }
@@ -207,22 +209,22 @@ footer .footer-logo{
     .download{
         flex-direction: row;
     }
-    .benefits-sec{
+    .page__benefits{
         display: flex;
     }
-    .benefits-sec > div:nth-of-type(1){
+    .page__benefits > div:nth-of-type(1){
         min-width: 800px;
     }
-    .benefits-sec > div:nth-of-type(2){
+    .page__benefits > div:nth-of-type(2){
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 50%;
     }
-    .benefits-sec img{
+    .page__benefits img{
         margin-left: -10.5em;
     }
-    .benefits-sec .item{
+    .page__benefits .item{
         text-align: start;
         margin: 0 0;
         max-width: 350px;
@@ -232,7 +234,7 @@ footer .footer-logo{
         display: flex;
         max-width: 85%;
     }
-    footer{
+    .page__footer{
         display: flex;
         align-items: center;
         padding: 0 7em;
@@ -258,6 +260,7 @@ footer .footer-logo{
         margin-left: auto;
     }    
 }
+
 @media screen and (min-width:1350px) {
     .logos-sec{
         flex-direction: row;
